@@ -2,27 +2,52 @@
 <html lang="en">
 <head>
     <title>Document</title>
+    <!-- applies style to everything in the body -->
+    <style>
+        body {
+            color: black;
+            font-family: arial, sans-serif;
+            border: 2px solid black;
+        }
+        /*h3 is more specific, so it turns red */
+        h3 {
+            color: black;
+            font-weight: bold;
+        }
+        p {
+            color: black;
+        }
+        /* put hastag in front of value you want to style - this is an id style */
+        #contact {
+            font-weight: bold;
+            text-decoration-line: underline;
+            font-size: 16pt;
+        }
+        /* put . in front of value you want to style - this is a class style */
+        /* see unviersity of cincinnati at bottom of code */
+        .blue {
+            color: blue;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <div>
-    <p>Tracy Eads</p>
-    <p>2214 Ross Estates Drive</p>
+    <!-- could use address tag instead of div tag -->
+    <div id="contact">
+    <span>Tracy Eads</span> |
+    <span>2214 Ross Estates Drive</span> |
     <span>Hamilton</span>
     <span>Ohio</span>
-    <span>45013</span>
-    <p>513-642-1112</p>
-    <p>tracyeads1@yahoo.com</p>
+    <span>45013</span> |
+    <span>513-642-1112</span> |
+    <span>tracyeads1@yahoo.com</span> |
     </div>
 
-    
-    <div>
-
+    <!-- Dont need div on table -->
+    <h3>Skills</h3>
     <table>
-        <thead>
-            <tr>
-                <h3>Skills</h3>
-            </tr>
-        </thead>
         <tr>
             <td>Git</td>
             <td>GitHub</td>
@@ -49,9 +74,9 @@
         </tr>
 
     </table>
-    </div>
 
     <div>
+        <!-- use paragraphs -->
     <h3>Career Goals</h3>
     <p>Become proficient in full stack development</p>
     <p>Become a full stack development manager</p>
@@ -59,6 +84,7 @@
     </div>
 
     <div>
+        <!--  put this in a div-->
     <h3>Work Experience</h3>
     <span>Visiting Instructor</span>
     <span>Miami University</span>
@@ -81,15 +107,22 @@
     
     <div>
     <h3>Education</h3>
-    <p>MAX Technical Training</p>
+    <p>
+    <span>MAX Technical Training</span>
     <span>Certificate</span>
     <span>2020</span>
-    <p>University of Cincinnati</p>
+    </p>
+    <p>
+    <span>University of Cincinnati</span>
     <span>Master of Science</span>
     <span>1995</span>
-    <p>University of Cincinnati</p>
+    </p>
+    <p>
+    <!-- this is referenced above as a class style blue -->
+    <span class="blue bold">University of Cincinnati</span>
     <span>Bachelor of Science</span>
     <span>1993</span>
+    </p>
     </div>
 </body>
 </html>
