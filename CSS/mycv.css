@@ -1,0 +1,28 @@
+
+body {
+    color: black;
+    font-family: arial, sans-serif;
+    border: 2px solid black;
+}
+/*h3 is more specific, so it turns red */
+h3 {
+    color: black;
+    font-weight: bold;
+}
+p {
+    color: black;
+}
+/* put hastag in front of value you want to style - this is an id style */
+#contact {
+    font-weight: bold;
+    text-decoration-line: underline;
+    font-size: 16pt;
+}
+/* put . in front of value you want to style - this is a class style */
+/* see unviersity of cincinnati at bottom of code */
+.blue {
+    color: blue;
+}
+.bold {
+    font-weight: bold;
+}

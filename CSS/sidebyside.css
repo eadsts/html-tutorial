@@ -1,0 +1,7 @@
+/* div is inline, but we are making them block elements which are side by side */
+div {
+    border: 1px solid red;
+    min-height: 100px;
+    display: inline-block;
+    width: 49%;
+}
